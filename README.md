@@ -2,10 +2,23 @@
 
 Es una App en la cual aficionados a la cocina y de las comidas podrán compartir recetas de platos típicos o especiales cocinadas por ellos mismos.
 
+Desarrollado en android studio y el lenguaje de programación java , se uso web services para consumir los datos.
+
 #### FUNCIONALIDADES 
 
+- :ballot_box_with_check: Registrar usuario
+- :ballot_box_with_check: Inicio sesión
+- :ballot_box_with_check: Perfil usuario
+- :ballot_box_with_check: Crear receta , ingredientes , instrucciones.
+- :ballot_box_with_check: Catálogo de recetas
+- :ballot_box_with_check: Crear comentario
+- :ballot_box_with_check: Recetas favoritas
 
+#### SE UTILIZO PARA DESARROLLAR LA APP
 
+- :ballot_box_with_check: java 
+- :ballot_box_with_check: MySQL como gestor de base de datos.
+- :ballot_box_with_check: PHP  para conectarse a la webservices y JSON para el intercambio de datos.
 
 #### BASE DE DATOS 
 

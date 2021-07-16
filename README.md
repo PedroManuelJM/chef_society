@@ -57,5 +57,3 @@ Desarrollado en android studio y el lenguaje de programación java , se uso web 
 
 
 
-
-

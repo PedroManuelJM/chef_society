@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.DetalleCatalogoActivity"
+    android:background="@drawable/fondo2colores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/idreceta_CatalogoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/ib_btn_regresar_detallecatalogo"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:src="@drawable/regreso"
+            android:layout_weight="1"
+            android:background="#0000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/Titulo_CatalogoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="24sp"
+                android:textColor="#432AA5"
+                android:textStyle="bold"
+                android:fontFamily="@font/bold"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+
+            <ImageButton
+                android:id="@+id/ib_agregar_favorito"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:src="@drawable/receta_favorito"
+                android:layout_weight="1"
+                android:background="#0000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/Imagen_CatalogoDetalle"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+            <TextView
+                android:id="@+id/Descripcion_CatalogoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ing_lbl_titulo_ingrediente"
+                android:layout_margin="10dp"
+                android:textSize="24sp"
+                android:textColor="#432AA5"
+                android:textStyle="bold"
+                android:fontFamily="@font/bold"
+                android:gravity="fill"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/ib_mostrar_comentario"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comentando"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="#0000"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMostrarIngredientesCatalogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ins_lbl_titulo_instruccion"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:textColor="#432AA5"
+            android:textStyle="bold"
+            android:fontFamily="@font/bold"
+            android:gravity="fill"/>
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMostrarInstruccionesCatalogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

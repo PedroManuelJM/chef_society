@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">chefsociety</string>
+    // INICIO
+    <string name="ini_lbl_carga">Cargando...</string>
+    // LOGIN
+    <string name="log_txt_correo">Ingrese correo</string>
+    <string name="log_txt_clave">Ingrese clave</string>
+    <string name="log_chk_recordar">Recordar sesión</string>
+    <string name="log_btn_ingresar">Ingresar</string>
+    <string name="log_btn_salir">Salir</string>
+    <string name="log_lbl_registro">¡Registrate!</string>
+    <string name="log_lbl_copyright">Derechos reservados 2021</string>
+    // PRINCIPAL
+    <string name="pri_lbl_nombre">Bienvenid@ Chef</string>
+
+    // REGISTRO
+    <string name="reg_txt_nombre">Ingrese sus nombres</string>
+    <string name="reg_txt_apellidos">Ingrese sus apellidos</string>
+    <string name="reg_txt_correo">Ingrese su correo</string>
+    <string name="reg_txt_clave">Ingrese su clave</string>
+    <string name="reg_txt_confirmar_clave">Reingrese su clave</string>
+    <string name="reg_txt_numero_documento">Ingrese su número de documento</string>
+    <string name="reg_chk_terminos">Acepto los términos y condiciones</string>
+    <string name="reg_btn_registrar">Registrar</string>
+    <string name="reg_btn_cancelar">Cancelar</string>
+    <string name="reg_btn_elegir">Elegir ... </string>
+
+    // FRAGMENTO OPCIONES
+    <string name="opc_btn_actualizar_datos">Actualizar datos</string>
+    <string name="opc_btn_cerrar_sesion">Cerrar Sesión</string>
+    <string name="opc_lbl_titulo">Mis Datos Personales</string>
+    <string name="opc_lbl_nombres">Nombres:</string>
+    <string name="opc_lbl_apellidos">Apellidos:</string>
+    <string name="opc_lbl_correo">Correo:</string>
+    <string name="opc_lbl_pais">País: </string>
+    <string name="opc_lbl_tipo_documento">documento: </string>
+    <string name="opc_lbl_nro_documento">Nro de documento: </string>
+
+    // FRAGMENTO RECETA
+
+    <string name="rec_lbl_titulo">Crear Receta</string>
+    <string name="rec_txt_nombre_receta">Ingrese el nombre de la receta</string>
+    <string name="rec_txt_descripcion_receta">Ingrese la descripción de la receta</string>
+    <string name="rec_btn_imagen_receta">Subir imagen receta</string>
+    <string name="rec_btn_continuar_receta">Continuar</string>
+    <string name="rec_btn_mis_recetas">Mis Recetas</string>
+
+
+    // FRAGMENTO CATÁLOGO
+    <string name="cat_lbl_titulo">Recetas</string>
+    // FRAGMENTO FAVORITOS
+
+    <string name="fav_lbl_titulo">Mis Recetas Favoritas</string>
+
+    // INGREDIENTE
+
+    <string name="ing_lbl_titulo_ingrediente">Ingredientes</string>
+    <string name="ing_txt_nombre_ingrediente">Ingrese el nombre del ingrediente</string>
+    <string name="ing_txt_cantidad_ingrediente">cantidad </string>
+    <string name="ing_btn_agregar_ingrediente">Agregar</string>
+    <string name="ing_btn_mostrar_ingrediente">Mostrar</string>
+    <string name="ing_btn_continuar">Continuar</string>
+    <string name="ing_btn_salir">Salir</string>
+
+    // INSTRUCCIÓN
+
+    <string name="ins_lbl_titulo_instruccion">Instrucción</string>
+    <string name="ins_txt_descripcion">Ingrese la instrucción de su receta</string>
+    <string name="ins_txt_nropaso">Ingrese el número de orden </string>
+    <string name="ing_btn_agregar_instruccion">Agregar instrucción</string>
+    <string name="ins_lbl_nropaso_instruccion"> Paso </string>
+    <string name="ins_btn_salir">Salir</string>
+
+    // -- PRUEBA -- PARA VER LOS ITEMS DE RECETA
+    <string name="pri_lbl_titulo">Mis Ingredientes </string>
+    <string name="pri_btn_elegir">Elegir ... </string>
+    <string name="pri_btn_registrar">Registrar</string>
+    <string name="pri_btn_mostrar">Mostrar</string>
+    <string name="edi_btn_actualizar">Actualizar</string>
+    <string name="edi_btn_eliminar">Eliminar</string>
+    <string name="edi_btn_regresar">Regresar</string>
+
+    // item-ingrediente
+    <string name="lbl_item_nomb_ing">Ingrediente</string>
+    <string name="lbl_item_cant_ing">Cantidad</string>
+    <string name="lbl_item_idunidadmedida_ingrediente">Unidad medida</string>
+
+    // item - mis recetas
+    <string name="pri_lbl_titulo_misrecetas">Mis Recetas</string>
+    <string name="lbl_item_nomb_rec_misrecetas">Receta</string>
+    <string name="lbl_item_descrip_rec_misrecetas">Descripción</string>
+
+    // item - categorias
+    <string name="pri_lbl_titulo_categoria">Catálogo de recetas</string>
+
+    // comentario
+    <string name="com_lbl_titulo_comentario">Comentarios</string>
+    <string name="com_lbl_tit_comentario">Comentario</string>
+    <string name="com_lbl_tit_es_comentario">Escriba su comentario</string>
+    <string name="com_lbl_aceptar">Aceptar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

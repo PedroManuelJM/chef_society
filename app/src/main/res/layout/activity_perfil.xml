@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.PerfilActivity"
+    android:background="@drawable/fondo2colores"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="5dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/ib_btn_regresar_perfil"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/regreso"
+                android:layout_weight="1"
+                android:background="#0000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_titulo"
+                android:textColor="#150202"
+                android:layout_weight="1"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="30dp" android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imagen_perfil"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnActualizarImg"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="@string/reg_btn_elegir">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_nombres"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/opc_txt_cambiar_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_apellidos"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/opc_txt_cambiar_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_correo"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/opc_txt_cambiar_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="70" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_pais"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/opc_sp_cambiar_pais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_tipo_documento"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/opc_sp_cambiar_tipo_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/opc_lbl_nro_documento"
+                android:textColor="#150202"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/opc_txt_cambiar_nro_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="25" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/opc_btn_actualizar_datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/opc_btn_actualizar_datos"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/opc_btn_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_btn_cerrar_sesion"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

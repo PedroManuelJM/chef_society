@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.RecetaFragment"
+    android:background="@drawable/fondo2colores">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/rec_lbl_titulo"
+            android:layout_marginTop="15dp"
+            android:textColor="#150202"
+            android:fontFamily="@font/bold"
+            android:textSize="25sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/rec_txt_nombre_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/rec_txt_nombre_receta"
+                android:inputType="text"
+                android:maxLength="128"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/rec_txt_descripcion_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/rec_txt_descripcion_receta"
+                android:inputType="text"
+                android:maxLength="128"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/rec_btn_imagen_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rec_btn_imagen_receta"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/rec_sp_categoria_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            >
+            <Button
+                android:id="@+id/rec_btn_continuar_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/green"
+                android:text="@string/rec_btn_continuar_receta"
+                />
+        </LinearLayout>
+
+</FrameLayout>

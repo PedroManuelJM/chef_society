@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.FavoritosFragment"
+    android:background="@drawable/fondo2colores">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/fav_lbl_titulo"
+        android:textColor="#150202"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/bold" />
+
+</FrameLayout>

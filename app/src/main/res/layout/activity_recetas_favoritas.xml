@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.RecetasFavoritasActivity"
+    android:background="@drawable/fondo2colores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageButton
+            android:id="@+id/ib_btn_regresar_receta_favorita"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/regreso"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="#0000"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fav_lbl_titulo"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:textColor="#26324A"
+            android:textStyle="bold"
+            android:fontFamily="@font/bold"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMostrarMisRecetasFavoritas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

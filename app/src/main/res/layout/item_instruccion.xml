@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_misinstrucciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:layout_weight="1">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ins_lbl_nropaso_instruccion"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/lbl_item_nropaso_instruccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:gravity="fill"
+                        android:textSize="18sp"/>
+
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/lbl_item_descripcion_instruccion"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="18sp"/>
+
+          </LinearLayout>
+
+     </LinearLayout>
+
+</androidx.cardview.widget.CardView>
